@@ -1,0 +1,19 @@
+<table style="width:90%">
+  <tr class="table-header">
+    <th>Name</th>
+    <th>Surname</th>
+    <th>Telephone</th>
+  </tr>
+  <tr *ngFor="let l of mylist">
+    <ng-template [ngIf]="l.name !== 'Unkown'">
+      <td class="table-cell">{{l.name}}</td>
+      <td class="table-cell">{{l.surname}}</td>
+      <td class="table-cell">{{l.telephone}}</td>
+    </ng-template>
+    <ng-template [ngIf]="l.name === 'Unkown'">
+      <td class="table-unkown">Unkown</td>
+      <td class="table-unkown">Unkown</td>
+      <td class="table-unkown">Unkown</td>
+    </ng-template>
+  </tr>
+</table>

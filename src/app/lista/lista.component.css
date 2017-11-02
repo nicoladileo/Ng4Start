@@ -1,0 +1,13 @@
+.table-cell {
+    text-align: center;
+}
+
+.table-header {
+    background-color: #f3f3f3;
+}
+
+.table-unkown {
+    text-align: center;
+    font-weight: bold;
+    color: red;
+}
